@@ -1,24 +1,50 @@
 .container_libraryPage {
-    border-bottom: 1px solid grey;
-    padding: 1rem 2rem;
-    color: aliceblue;
+  border-bottom: 1px solid grey;
+  padding: 1rem 2rem;
+  color: aliceblue;
 }
 
 .title_container_LibraryPage {
-    margin: 0.5rem 4rem;
+  margin: 0.5rem 4rem;
 }
 
 .title_container_LibraryPage b {
-    margin: auto 0.5rem;
-    padding: auto 0.5rem;
-    font-size: medium;
+  margin: auto 0.5rem;
+  padding: auto 0.5rem;
+  font-size: medium;
 }
 
 .container_videoList_LibraryPage {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 0;
-    max-height: 80vh;
-    overflow-y: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+@media only screen and (max-width: 500px) {
+  .container_libraryPage {
+    padding: 1rem 0.5rem;
+  }
+
+  .container_videoList_LibraryPage {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .title_container_LibraryPage {
+    margin: 0.5rem 1rem;
+  }
+
+  .container_videoList_LibraryPage {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  .title_container_LibraryPage {
+    margin: 0.5rem 0.2rem;
+  }
 }

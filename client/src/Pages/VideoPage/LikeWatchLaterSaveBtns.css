@@ -1,20 +1,67 @@
 .btns_cont_videoPage {
-    display: flex;
-    flex-grow: 5;
-    flex-direction: row-reverse;
+  display: flex;
+  flex-grow: 5;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
 }
 
 .btn_VideoPage {
-    margin: auto 0;
-    display: flex;
+  margin: auto 0;
+  display: flex;
 }
 
 .like_videoPage {
-    margin: 0.5rem;
-    display: flex;
-    cursor: pointer;
+  margin: 0.5rem;
+  display: flex;
+  cursor: pointer;
 }
 
 .btns_videoPage {
-    margin: auto 0.2rem;
+  margin: auto 0.2rem;
+}
+
+@media only screen and (max-width: 850px) {
+  .dislike_hide {
+    display: none;
+  }
+
+  .like_videoPage {
+    margin: 0.5rem 0.3rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .three_dots {
+    margin-left: 0.3rem;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .save_hide {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .save_hide {
+    display: inline-block;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .save_hide {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .thanks_hide {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .share_hide {
+    display: none;
+  }
 }

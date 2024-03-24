@@ -32,24 +32,6 @@ function Comments({ videoId }) {
     }
   };
 
-  // const commentsList = [
-  //   {
-  //     _id: "1",
-  //     commentBody: "hello",
-  //     userCommented: "abc",
-  //   },
-  //   {
-  //     _id: "2",
-  //     commentBody: "hi",
-  //     userCommented: "xyz",
-  //   },
-  //   {
-  //     _id: "3",
-  //     commentBody: "how are you",
-  //     userCommented: "edf",
-  //   },
-  // ];
-
   return (
     <>
       <form className="comments_sub_form_comments" onSubmit={handleOnSubmit}>

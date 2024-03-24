@@ -1,5 +1,19 @@
 .Container_ShowVideoGrid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+@media only screen and (max-width: 440px) {
+  .video_box_app {
+    width: 18rem;
+    height: 14rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .video_box_app {
+    width: 16rem;
+    height: 12rem;
+  }
 }

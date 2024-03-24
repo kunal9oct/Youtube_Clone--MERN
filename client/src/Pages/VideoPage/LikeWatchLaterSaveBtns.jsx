@@ -132,7 +132,7 @@ function LikeWatchLaterSaveBtns({ vv, vid }) {
 
   return (
     <div className="btns_cont_videoPage">
-      <div className="btn_VideoPage">
+      <div className="btn_VideoPage three_dots">
         <BsThreeDots />
       </div>
 
@@ -166,19 +166,19 @@ function LikeWatchLaterSaveBtns({ vv, vid }) {
               <AiOutlineDislike size={22} className="btns_videoPage" />
             </>
           )}
-          <b>Dislike</b>
+          <b className="dislike_hide">Dislike</b>
         </div>
 
         <div className="like_videoPage" onClick={toggleSavedVideo}>
           {saveVideo ? (
             <>
               <MdPlaylistAddCheck size={23} className="btns_videoPage" />
-              <b>Saved</b>
+              <b className="save_hide">Saved</b>
             </>
           ) : (
             <>
               <RiPlayListAddFill size={17} className="btns_videoPage" />
-              <b>Save</b>
+              <b className="save_hide">Save</b>
             </>
           )}
         </div>
@@ -186,14 +186,14 @@ function LikeWatchLaterSaveBtns({ vv, vid }) {
         <div className="like_videoPage">
           <>
             <RiHeartAddFill size={17} className="btns_videoPage" />
-            <b>Thanks</b>
+            <b className="thanks_hide">Thanks</b>
           </>
         </div>
 
         <div className="like_videoPage">
           <>
             <RiShareForwardLine size={17} className="btns_videoPage" />
-            <b>Share</b>
+            <b className="share_hide">Share</b>
           </>
         </div>
       </div>

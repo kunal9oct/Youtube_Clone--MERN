@@ -6,7 +6,7 @@
 }
 
 .channel_logo_channel {
-  border: 10px solid rgba(49, 7, 219, 0.66);
+  border: 3px solid rgba(49, 7, 219, 0.66);
   width: 5rem;
   height: 5rem;
   border-radius: 100%;
@@ -54,4 +54,58 @@
 .uploadbtn_channel:hover {
   border: 2px solid;
   color: rgb(231, 140, 14);
+}
+
+@media only screen and (max-width: 800px) {
+  .hideIt {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .channel_logo_channel {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .channel_logo_channel b {
+    font-size: 1.5rem;
+  }
+
+  .description_channel b {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .description_channel b {
+    font-size: 1.5rem;
+  }
+
+  .description_channel p {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 475px) {
+  .channel_logo_channel {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .channel_logo_channel b {
+    font-size: 1rem;
+  }
+
+  .container3_channel .channel_buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .editbtn_channel, .uploadbtn_channel {
+    position: static;
+  }
 }

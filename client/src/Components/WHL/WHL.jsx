@@ -21,7 +21,7 @@ function WHL({ page, videoList }) {
     <div className="container_Pages_App">
       <LeftSidebar />
       <div className="container2_Pages_App">
-        <p className="container_whl">
+        <div className="container_whl">
           <div className="box_WHL leftside_whl">
             <b>Your {page} Shown here </b>
             {page === "History" && (
@@ -34,7 +34,7 @@ function WHL({ page, videoList }) {
               <WHLVideoList page={page} CurrentUser={CurrentUser?.result._id} videoList={videoList} />
             </div>
           </div>
-        </p>
+        </div>
       </div>
     </div>
   );

@@ -5,13 +5,6 @@ import { updateChannelData } from "../../actions/channelUser";
 import "./CreateEditChannel.css";
 
 function CreateEditChannel({ setEditCreateChannelBtn }) {
-  // const CurrentUser = {
-  //   result: {
-  //     email: "xyz@gmail.com",
-  //     joinedOn: "2222-07-15T09:57:23.489Z",
-  //   },
-  // };
-
   const CurrentUser = useSelector((state) => state.currentUserReducer);
 
   const [name, setName] = useState(CurrentUser?.result.name);

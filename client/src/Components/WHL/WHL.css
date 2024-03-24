@@ -1,45 +1,61 @@
 .container_whl {
-    margin: 0;
-    display: flex;
-    padding: 0.5rem;
-    justify-content: space-around;
+  margin: 0;
+  display: flex;
+  padding: 0.5rem;
+  justify-content: space-around;
 }
 
 .box_WHL {
-    width: 45%;
-    padding: 0.8rem;
-    margin: 0.8rem;
-    color: white;
-    display: flex;
-    flex-direction: column;
+  width: 45%;
+  padding: 0.8rem;
+  margin: 0.8rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
 }
 
 .box_WHL b {
-    font-size: 3rem;
+  font-size: 3rem;
 }
 
 .clear_History_btn {
-    color: grey;
-    font-size: 1.5rem;
-    cursor: pointer;
-    font-weight: bold;
-    margin: auto 0;
+  color: grey;
+  font-size: 1.5rem;
+  cursor: pointer;
+  font-weight: bold;
+  margin: auto 0;
 }
 
 .clear_History_btn:hover {
-    color: white;
+  color: white;
 }
 
 .rightSide_whl h1 {
-    text-decoration: underline;
-    color: white;
+  text-decoration: underline;
+  color: white;
 }
 
 .leftside_whl {
-    background-color: rgba(0, 0, 0, 0.153);
-    height: 50vh;
+  background-color: rgba(0, 0, 0, 0.153);
+  height: 50vh;
 }
 
 .whl_list {
-    overflow-y: auto;
+  overflow-y: auto;
+}
+
+@media only screen and (max-width: 770px) {
+  .container_whl {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .rightSide_whl {
+    margin-left: 1rem;
+  }
+
+  .leftside_whl {
+    width: 90%;
+    margin: 0.1rem 0.3rem;
+  }
 }

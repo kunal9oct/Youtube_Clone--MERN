@@ -16,7 +16,7 @@ function DrawerSidebar({ toggleDrawer, toggleDrawerSidebar }) {
     <div className="container_DrawerLeftSidebar" style={toggleDrawerSidebar}>
       <div className="container2_DrawerLeftSidebar">
         <div className="Drawer_leftsidebar">
-          <NavLink to={'/'} className="icon_sidebar_div">
+          <NavLink to={"/"} className="icon_sidebar_div">
             <p>
               <AiOutlineHome
                 size={22}
@@ -27,7 +27,7 @@ function DrawerSidebar({ toggleDrawer, toggleDrawerSidebar }) {
             </p>
           </NavLink>
 
-          <div className="icon_sidebar_div">
+          <NavLink to={"/explore"} className="icon_sidebar_div">
             <p>
               <MdOutlineExplore
                 size={22}
@@ -36,7 +36,7 @@ function DrawerSidebar({ toggleDrawer, toggleDrawerSidebar }) {
               />
               <div className="text_sidebar_icon">Explore</div>
             </p>
-          </div>
+          </NavLink>
 
           <div className="icon_sidebar_div">
             <p>
@@ -63,7 +63,7 @@ function DrawerSidebar({ toggleDrawer, toggleDrawerSidebar }) {
         </div>
 
         <div className="libraryBtn_DrawerleftSidebar">
-          <NavLink to={'/library'} className="icon_sidebar_div">
+          <NavLink to={"/library"} className="icon_sidebar_div">
             <p>
               <MdOutlineVideoLibrary
                 size={22}
@@ -74,7 +74,31 @@ function DrawerSidebar({ toggleDrawer, toggleDrawerSidebar }) {
             </p>
           </NavLink>
 
-          <NavLink to={'/history'} className="icon_sidebar_div">
+          <NavLink to={"/askQuestions"} className="icon_sidebar_div">
+            <p>
+              <img
+                src="/assets/icons/add-post.svg"
+                width={22}
+                className="icon_sidebar"
+                style={{ margin: "auto 0.7rem" }}
+              />
+              <div className="text_sidebar_icon">Ask Questions</div>
+            </p>
+          </NavLink>
+
+          <NavLink to={"/createPost"} className="icon_sidebar_div">
+            <p>
+              <img
+                src="/assets/icons/edit.svg"
+                width={22}
+                className="icon_sidebar invert-white"
+                style={{ margin: "auto 0.7rem" }}
+              />
+              <div className="text_sidebar_icon">Create Post</div>
+            </p>
+          </NavLink>
+
+          <NavLink to={"/history"} className="icon_sidebar_div">
             <p>
               <FaHistory
                 size={22}
@@ -85,7 +109,7 @@ function DrawerSidebar({ toggleDrawer, toggleDrawerSidebar }) {
             </p>
           </NavLink>
 
-          <NavLink to={'/yourvideos'} className="icon_sidebar_div">
+          <NavLink to={"/yourvideos"} className="icon_sidebar_div">
             <p>
               <AiFillPlaySquare
                 size={22}
@@ -96,7 +120,7 @@ function DrawerSidebar({ toggleDrawer, toggleDrawerSidebar }) {
             </p>
           </NavLink>
 
-          <NavLink to={'/watchlater'} className="icon_sidebar_div">
+          <NavLink to={"/watchlater"} className="icon_sidebar_div">
             <p>
               <MdOutlineWatchLater
                 size={22}
@@ -107,7 +131,7 @@ function DrawerSidebar({ toggleDrawer, toggleDrawerSidebar }) {
             </p>
           </NavLink>
 
-          <NavLink to={'likedvideo'} className="icon_sidebar_div">
+          <NavLink to={"likedvideo"} className="icon_sidebar_div">
             <p>
               <AiFillLike
                 size={22}
@@ -120,35 +144,34 @@ function DrawerSidebar({ toggleDrawer, toggleDrawerSidebar }) {
         </div>
 
         <div className="subScriptions_lsdbar">
-            <h3>Your Subscriptions</h3>
-            <div className="chanel_lsdbar">
-                <p>A</p>
-                <div>Channel 1</div>
-            </div>
-            <div className="chanel_lsdbar">
-                <p>B</p>
-                <div>Channel 2</div>
-            </div>
-            <div className="chanel_lsdbar">
-                <p>C</p>
-                <div>Channel 3</div>
-            </div>
-            <div className="chanel_lsdbar">
-                <p>D</p>
-                <div>Channel 4</div>
-            </div>
-            <div className="chanel_lsdbar">
-                <p>E</p>
-                <div>Channel 5</div>
-            </div>
+          <h3>Your Subscriptions</h3>
+          <div className="chanel_lsdbar">
+            <p>A</p>
+            <div>Channel 1</div>
+          </div>
+          <div className="chanel_lsdbar">
+            <p>B</p>
+            <div>Channel 2</div>
+          </div>
+          <div className="chanel_lsdbar">
+            <p>C</p>
+            <div>Channel 3</div>
+          </div>
+          <div className="chanel_lsdbar">
+            <p>D</p>
+            <div>Channel 4</div>
+          </div>
+          <div className="chanel_lsdbar">
+            <p>E</p>
+            <div>Channel 5</div>
+          </div>
         </div>
-
       </div>
 
-      <div className="container3_DrawerLeftSidebar" onClick={() => toggleDrawer()}>
-
-      </div>
-
+      <div
+        className="container3_DrawerLeftSidebar"
+        onClick={() => toggleDrawer()}
+      ></div>
     </div>
   );
 }

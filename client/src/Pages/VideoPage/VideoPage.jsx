@@ -9,6 +9,7 @@ import { Link } from "react-router-dom";
 import moment from "moment";
 import { addToHistory } from "../../actions/History";
 import { viewVideo } from "../../actions/video";
+import VideoPlayer from "../../Components/VideoPlayer";
 
 function VideoPage() {
   const { vid } = useParams();
@@ -29,10 +30,12 @@ function VideoPage() {
   };
 
   const handleViews = () => {
-     dispatch(viewVideo({
-      id:vid
-     }))
-  }
+    dispatch(
+      viewVideo({
+        id: vid,
+      })
+    );
+  };
 
   useEffect(() => {
     if (CurrentUser) {
@@ -46,12 +49,10 @@ function VideoPage() {
       <div className="container_videoPage">
         <div className="container2_videoPage">
           <div className="video_display_screen_videoPage">
-            <video
-              src={`http://localhost:5500/${vv?.filePath}`}
-              className={"video_ShowVideo_videoPage"}
-              controls
-              //   autoPlay
-            ></video>
+            <VideoPlayer
+              className="video_ShowVideo_videoPage"
+              src={vv?.filePath}
+            />
 
             <div className="video_details_videoPage">
               <div className="video_btns_title_VideoPage_cont">
@@ -85,7 +86,9 @@ function VideoPage() {
             </div>
           </div>
 
-          <div className="moreVideoBar">More Videos</div>
+          <div className="moreVideoBar">
+            <div>More Videos</div>
+          </div>
         </div>
       </div>
     </>

@@ -5,9 +5,9 @@ import "./ShowVideoGrid.css";
 function ShowVideoGrid({ vids }) {
   return (
     <div className="Container_ShowVideoGrid">
-      {vids?.map((video) => {
+      {vids?.map((video, index) => {
         return (
-          <div key={video.title} className="video_box_app">
+          <div key={video.title + index} className="video_box_app">
             <ShowVideo vid={video} />
           </div>
         );

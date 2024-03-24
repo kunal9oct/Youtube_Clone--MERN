@@ -2,8 +2,6 @@ import React from "react";
 import ShowVideoList from "../ShowVideoList/ShowVideoList";
 
 function WHLVideoList({ page, videoList, CurrentUser }) {
-  // console.log(videoList);
-
   return (
     <>
       {CurrentUser ? (
@@ -11,10 +9,10 @@ function WHLVideoList({ page, videoList, CurrentUser }) {
           {videoList?.data
             ?.filter((q) => q?.Viewer === CurrentUser)
             .reverse()
-            .map((m) => {
+            .map((m, index) => {
               return (
                 <>
-                  <ShowVideoList videoId={m?.videoId} key={m?._id} />
+                  <ShowVideoList videoId={m?.videoId} key={m + index} />
                 </>
               );
             })}

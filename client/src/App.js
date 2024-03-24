@@ -1,8 +1,9 @@
 import { useEffect, useState } from 'react';
 import './App.css';
+import './myStyles.css';
 import React from 'react';
 import Navbar from './Components/Navbar/Navbar.jsx';
-import { BrowserRouter as Router } from "react-router-dom";
+import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
 import AllRoutes from './Components/AllRoutes';
 import DrawerSidebar from './Components/LeftSidebar/DrawerSidebar.jsx';
 import CreateEditChannel from './Pages/Channel/CreateEditChannel.jsx';
@@ -14,9 +15,13 @@ import { getAlllikedVideo } from './actions/likedVideo.js';
 import { getAllwatchLater } from './actions/watchLater.js';
 import { getAllHistory } from './actions/History.js';
 import { getAllComment } from './actions/comments.js';
+import AuthLayout from "./Pages/Auth/AuthLayout.jsx";
+import SigninForm from "./Pages/Auth/forms/SigninForm.jsx";
+import SignupForm from "./Pages/Auth/forms/SignupForm.jsx";
 
 function App() {
   const dispatch = useDispatch();
+  const [display, setDisplay] = useState(false);
 
   useEffect(() => {
     dispatch(fetchAllChannel());
@@ -53,11 +58,18 @@ function App() {
       {
         editCreateChannelBtn && <CreateEditChannel setEditCreateChannelBtn={setEditCreateChannelBtn} />
       }
-      <Navbar setEditCreateChannelBtn={setEditCreateChannelBtn} toggleDrawer={toggleDrawer} />
+      <Navbar display={display} setEditCreateChannelBtn={setEditCreateChannelBtn} toggleDrawer={toggleDrawer} />
 
       <DrawerSidebar toggleDrawer={toggleDrawer} toggleDrawerSidebar={toggleDrawerSidebar} />
 
-      <AllRoutes setVidUploadPage={setVidUploadPage} setEditCreateChannelBtn={setEditCreateChannelBtn} />
+      <AllRoutes setDisplay={setDisplay} setVidUploadPage={setVidUploadPage} setEditCreateChannelBtn={setEditCreateChannelBtn} />
+
+      <Routes>
+        <Route element={<AuthLayout setDisplay={setDisplay} />}>
+          <Route path="/sign-in" element={<SigninForm />} />
+          <Route path="/sign-up" element={<SignupForm />} />
+        </Route>
+      </Routes>
     </Router>
   );
 }
