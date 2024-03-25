@@ -19,8 +19,8 @@ const app = express();
 app.use(cors());
 app.use(express.json({ limit: "30mb", extended: true }));
 app.use(express.urlencoded({ limit: "30mb", extended: true }));
+app.use('/uploads', express.static('uploads'));
 app.use('/uploads', express.static(path.join('uploads')));
-app.use('/uploads/images', express.static('uploads/images'));
 app.use('/uploads/videos', express.static('uploads/videos'));
 
 app.get('/', (req, res) => {

@@ -10,7 +10,7 @@ const PostCard = ({ questionAndPost }) => {
             src={
               questionAndPost.avatarImgURL ||
               (questionAndPost.profileImgURL &&
-                `https://youtube-clone-4ea3.onrender.com/uploads/images/${questionAndPost.profileImgURL}`) ||
+                `https://youtube-clone-4ea3.onrender.com/uploads/${questionAndPost?.profileImgURL}`) ||
               "/assets/icons/profile-placeholder.svg"
             }
             alt="creator"
@@ -23,11 +23,11 @@ const PostCard = ({ questionAndPost }) => {
             </p>
             <div className="flex items-center gap-2 text-light-3">
               <p className="subtle-semibold lg:small-regular">
-                {multiFormatDateString(questionAndPost.createdAt)}
+                {multiFormatDateString(questionAndPost?.createdAt)}
               </p>
               {questionAndPost.location && (
                 <p className="subtle-semibold lg:small-regular">
-                  - {questionAndPost.location}
+                  - {questionAndPost?.location}
                 </p>
               )}
             </div>
@@ -45,36 +45,36 @@ const PostCard = ({ questionAndPost }) => {
               minHeight: "100px",
               padding: "20px",
             }}
-            dangerouslySetInnerHTML={{ __html: questionAndPost.rteText }}
+            dangerouslySetInnerHTML={{ __html: questionAndPost?.rteText }}
             className="rounded-md"
           ></div>
         )}
 
         {questionAndPost.text && (
-          <p className="whitespace-pre-wrap">{questionAndPost.text}</p>
+          <p className="whitespace-pre-wrap">{questionAndPost?.text}</p>
         )}
       </div>
 
-      {questionAndPost.code && (
+      {questionAndPost?.code && (
         <div className="small-medium lg:base-medium py-5 whitespace-pre-wrap">
           <p>{questionAndPost.code}</p>
         </div>
       )}
 
-      {questionAndPost.image && (
+      {questionAndPost?.image && (
         <div>
           <img
-            src={`https://youtube-clone-4ea3.onrender.com/uploads/images/${questionAndPost.image}`}
+            src={`https://youtube-clone-4ea3.onrender.com/uploads/${questionAndPost?.image}`}
             alt="post image"
             className="post-card_img"
           />
         </div>
       )}
 
-      {questionAndPost.video && (
+      {questionAndPost?.video && (
         <VideoPlayer
           className="h-64 xs:h-[400px] lg:h-[450px] w-full rounded-[24px] object-cover box-border"
-          srcURL={questionAndPost.video}
+          srcURL={questionAndPost?.video}
         />
       )}
     </div>

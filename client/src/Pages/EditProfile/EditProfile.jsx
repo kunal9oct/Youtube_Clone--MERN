@@ -53,10 +53,10 @@ const EditProfile = () => {
 
         const data = await response.json();
 
-        const user = { result: data.result, token }
+        const user = { result: data.result, token };
 
         if (response.status === 200) {
-          console.log('Success');
+          console.log("Success");
           localStorage.setItem("Profile", JSON.stringify(user));
           dispatch(setCurrentUser(JSON.parse(localStorage.getItem("Profile"))));
           setChangeUI(false);
@@ -185,7 +185,7 @@ const EditProfile = () => {
                             (!changeUI &&
                               (CurrentUser?.result.avatarImgURL ||
                                 (CurrentUser?.result.profileImgURL &&
-                                  `https://youtube-clone-4ea3.onrender.com/uploads/images/${CurrentUser?.result.profileImgURL}`))) ||
+                                  `https://youtube-clone-4ea3.onrender.com/uploads/${CurrentUser?.result?.profileImgURL}`))) ||
                             avatarURL ||
                             (file && URL.createObjectURL(file))
                           }`}

@@ -20,7 +20,7 @@ function DescribeChannel({ setEditCreateChannelBtn, Cid, setVidUploadPage }) {
                 src={
                   CurrentUser?.result.avatarImgURL ||
                   (CurrentUser?.result.profileImgURL &&
-                    `https://youtube-clone-4ea3.onrender.com/uploads/images/${CurrentUser?.result.profileImgURL}`)
+                    `https://youtube-clone-4ea3.onrender.com/uploads/${CurrentUser?.result?.profileImgURL}`)
                 }
                 alt="profile"
                 className="h-24 w-24 max-[600px]:h-16 max-[600px]:w-16 max-[500px]:h-12 max-[500px]:w-12 rounded-full"

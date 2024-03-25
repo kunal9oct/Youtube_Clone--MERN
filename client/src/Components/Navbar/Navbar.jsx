@@ -91,7 +91,7 @@ function Navbar({ toggleDrawer, setEditCreateChannelBtn, display }) {
                     src={
                       CurrentUser?.result.avatarImgURL ||
                       (CurrentUser?.result.profileImgURL &&
-                        `https://youtube-clone-4ea3.onrender.com/uploads/images/${CurrentUser?.result.profileImgURL}`)
+                        `https://youtube-clone-4ea3.onrender.com/uploads/${CurrentUser?.result?.profileImgURL}`)
                     }
                     alt="profile"
                     className="h-8 w-8 rounded-full"

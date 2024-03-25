@@ -30,7 +30,7 @@ function Auth({ User, setAuthBtn, setEditCreateChannelBtn }) {
                   src={
                     User?.result.avatarImgURL ||
                     (User?.result.profileImgURL &&
-                      `https://youtube-clone-4ea3.onrender.com/uploads/images/${User?.result.profileImgURL}`)
+                      `https://youtube-clone-4ea3.onrender.com/uploads/${User?.result?.profileImgURL}`)
                   }
                   alt="profile"
                   className="h-8 w-8 rounded-full"

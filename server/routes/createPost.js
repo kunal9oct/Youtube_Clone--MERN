@@ -8,7 +8,7 @@ const routes = express.Router();
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
         if (file.mimetype.startsWith('image')) {
-            cb(null, 'uploads/images/');
+            cb(null, 'uploads/');
         } else if (file.mimetype.startsWith('video')) {
             cb(null, 'uploads/videos/'); 
         } else {
