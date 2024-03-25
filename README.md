@@ -116,6 +116,18 @@ If you want to contact me, you can reach me through below links 🔗.
 
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kunalverma9/)
 
+## Contributing
+
+Contributions are always welcome! Feel free to fork the repository, make changes, and submit pull requests.
+
+See `README.md` for ways to get started.
+
+Feel free to customize this README according to your project's specific details and requirements.
+
+## Disclaimer
+
+This project is for educational and demonstration purposes only. Any resemblance to real products or services is purely coincidental.
+
 ## Show your Support
 
 Dont forget to give a ⭐️ to this project ... Happy coding!
