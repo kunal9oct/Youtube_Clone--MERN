@@ -1,70 +1,117 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# YouTube Clone with some Additional Features
 
-## Available Scripts
+I have made a YouTube clone with channel creation, video upload functionality along with focusing on enhancing the functionality and user experience of a web application by implementing several key features. These features included creating a rich text editor for posting questions, developing a public space page for content sharing with abusive content filtering, enabling users to add custom avatars, and integrating a custom video player with gesture-based controls.
 
-In the project directory, you can run:
+[Visit Now 🚀](https://youtube100.netlify.app/)
 
-### `npm start`
+![App Screenshot](https://i.im.ge/2024/03/25/WXBESG.Home-Page.png)
+## 🖥️ Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**Client:** React, Redux, TailwindCSS , React Player, React Dropzone, React Hook Form, React Icons, React Dropzone, Axios, Bad Words, Framer Motion
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**Server:** Node, Express, JWT, Multer, Bcrypt, Cors, Dotenv, Mongoose
 
-### `npm test`
+## 🚀 Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Channel creation with Video Upload 
+- Google Login along with dedicated SignIn/SignUp functionality
+- Post Questions with Rich Text Editor functionality along with video
+- Public space for sharing content with abusive content filtering
+- Custom Avatar functionality to Edit Profile with any Image or Custom Avatar
+- Custom video player with gesture-based controls
+- Responsiveness which support till 360px width
+## 🛠 Skills
+React, Redux, Node, Express, MongoDB, Javascript, HTML5, CSS3...
 
-### `npm run build`
+## Sneak Peek into Application 🙈
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### SignIn & SignUp Page with amazing 3D space animation
+![SignIn Page](https://i.im.ge/2024/03/25/WXGqqL.SignIn-Page.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![SignUp Page](https://i.im.ge/2024/03/25/WXGbtp.SignUp-Page.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### Create Post 
+![Create Post Page](https://i.im.ge/2024/03/25/WXelyK.Create-Post.png)
 
-### `npm run eject`
+#### Explore Feed - Public Space for content sharing
+![Explore Page](https://i.im.ge/2024/03/25/WlM4Qy.Explore.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+#### Video Page with like, dislike, comment feature 
+![Explore Page](https://i.im.ge/2024/03/25/WlQVhM.Video-Page.png)
+## Getting Started
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### Prerequisites
+Before running the application, make sure you have the following installed and created:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- [Node.js](https://nodejs.org/en/download)
+- [MongoDB Atlas account](https://www.mongodb.com/)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+#### Installation
 
-## Learn More
+##### 1. Clone the repository
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+  git clone https://github.com/kunal9oct/Youtube_Clone--MERN.git
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+##### 2. Go to the project directory and install dependencies for both the client and server
 
-### Code Splitting
+```bash
+  cd client
+  npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+  cd server
+  npm install
+```
 
-### Analyzing the Bundle Size
+#### 3. Create a .env file in the server directory and add the environment variables as shown in the Environment Variables section below.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+##### 4. Start the server
 
-### Making a Progressive Web App
+```bash
+  cd server
+  npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+##### 5. Start the client
 
-### Advanced Configuration
+```bash
+  cd client
+  npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Done! Now open localhost:3000 in your browser.
 
-### Deployment
+## Environment Variables
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+To run this project, you will need to add the following environment variables to your .env file
 
-### `npm run build` fails to minify
+```bash
+PORT=
+JWT_SECRET=
+CONNECTION_URL=
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Author
+
+- [@kunalverma](https://github.com/kunal9oct)
+
+# Hi, I'm Kunal! 👋
+
+
+## 🚀 About Me
+I'm a full stack MERN developer with a passion for technology. I can create effective and innovative technical solutions, and I always keep learning and growing. I have worked on challenging projects, and I communicate well and think strategically. I'm a team player who values collaboration.
+
+I love technology and strive for excellence in everything I do. I'm confident in my value and innovation, and I'm ready for new challenges and exceptional results.
+
+
+## 📬 Contact
+If you want to contact me, you can reach me through below links 🔗.
+
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kunalverma9/)
+## Show your Support
+
+Dont forget to give a ⭐️ to this project ... Happy coding!
