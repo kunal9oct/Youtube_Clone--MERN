@@ -5,7 +5,8 @@ I have made a YouTube clone with channel creation, video upload functionality al
 
 [Visit Now 🚀](https://youtube100.netlify.app/)
 
-![App Screenshot](https://i.im.ge/2024/03/25/WXBESG.Home-Page.png)
+![Home Page](https://github.com/kunal9oct/Youtube_Clone--MERN/assets/110735646/ce61b42b-3d93-4b75-8bc0-6011214b4d31)
+
 ## 🖥️ Tech Stack
 
 **Client:** React, Redux, TailwindCSS , React Player, React Dropzone, React Hook Form, React Icons, React Dropzone, Axios, Bad Words, Framer Motion
@@ -21,24 +22,26 @@ I have made a YouTube clone with channel creation, video upload functionality al
 - Custom Avatar functionality to Edit Profile with any Image or Custom Avatar
 - Custom video player with gesture-based controls
 - Responsiveness which support till 360px width
+
 ## 🛠 Skills
 React, Redux, Node, Express, MongoDB, Javascript, HTML5, CSS3...
 
 ## Sneak Peek into Application 🙈
 
 #### SignIn & SignUp Page with amazing 3D space animation
-![SignIn Page](https://i.im.ge/2024/03/25/WXGqqL.SignIn-Page.png)
+![SignIn Page](https://github.com/kunal9oct/Youtube_Clone--MERN/assets/110735646/a476f589-11fb-478e-bea1-f8cbf7fb7069)
 
-![SignUp Page](https://i.im.ge/2024/03/25/WXGbtp.SignUp-Page.png)
+![SignUp Page](https://github.com/kunal9oct/Youtube_Clone--MERN/assets/110735646/3bbde157-8892-4706-bb9f-785a332168a2)
 
 #### Create Post 
-![Create Post Page](https://i.im.ge/2024/03/25/WXelyK.Create-Post.png)
+![Create Post](https://github.com/kunal9oct/Youtube_Clone--MERN/assets/110735646/57f4fa56-2386-42bb-848c-a6053877233f)
 
 #### Explore Feed - Public Space for content sharing
-![Explore Page](https://i.im.ge/2024/03/25/WlM4Qy.Explore.png)
+![Explore](https://github.com/kunal9oct/Youtube_Clone--MERN/assets/110735646/07173387-4e57-418c-b680-21ff76fb42f3)
 
 #### Video Page with like, dislike, comment feature 
-![Explore Page](https://i.im.ge/2024/03/25/WlQVhM.Video-Page.png)
+![Video Page](https://github.com/kunal9oct/Youtube_Clone--MERN/assets/110735646/b9059208-2d8c-4731-8087-8df15fc119fe)
+
 ## Getting Started
 
 #### Prerequisites
@@ -112,6 +115,7 @@ I love technology and strive for excellence in everything I do. I'm confident in
 If you want to contact me, you can reach me through below links 🔗.
 
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kunalverma9/)
+
 ## Show your Support
 
 Dont forget to give a ⭐️ to this project ... Happy coding!
